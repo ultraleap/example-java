@@ -1,7 +1,11 @@
 image: java:latest
 
+include:
+  - template: Code-Quality.gitlab-ci.yml
+
 stages:
   - build
+  - testing
   - execute
 
 build:
@@ -10,6 +14,10 @@ build:
   artifacts:
     paths:
      - HelloWorld.*
+
+code_quality:
+  artifacts:
+    paths:[gl-code-quality-report.json]
 
 execute:
   stage: execute

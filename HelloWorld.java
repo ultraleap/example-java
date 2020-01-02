@@ -5,7 +5,7 @@ public class HelloWorld {
 
     public void hello(int a, int b, int c)
     {
-        system.out.println("Here's a little function.");
+        System.out.println("Here's a little function.");
     }
 
 }

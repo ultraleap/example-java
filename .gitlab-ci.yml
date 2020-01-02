@@ -16,6 +16,7 @@ build:
      - HelloWorld.*
 
 code_quality:
+  stage: testing
   artifacts:
     paths: [gl-code-quality-report.json]
 

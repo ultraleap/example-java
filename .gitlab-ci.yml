@@ -17,7 +17,7 @@ build:
 
 code_quality:
   artifacts:
-    paths:[gl-code-quality-report.json]
+    paths: [gl-code-quality-report.json]
 
 execute:
   stage: execute

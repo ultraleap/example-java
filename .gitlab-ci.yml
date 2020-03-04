@@ -18,6 +18,7 @@ build:
 code_quality:
   stage: test
   artifacts:
+    expose_as: 'Code Quality Report'
     paths: [gl-code-quality-report.json]
 
 execute:

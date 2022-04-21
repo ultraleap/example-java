@@ -14,13 +14,19 @@ build:
   artifacts:
     paths:
      - HelloWorld.*
+  tags:
+    - docker
 
 code_quality:
   stage: test
   artifacts:
     expose_as: 'Code Quality Report'
     paths: [gl-code-quality-report.json]
+  tags:
+    - docker
 
 execute:
   stage: execute
   script: /usr/lib/jvm/java-8-openjdk-amd64/bin/java HelloWorld
+  tags:
+    - docker
